@@ -1,5 +1,7 @@
-.body {
+body {
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 #title {
   z-index: 5;
@@ -8,7 +10,7 @@
   height: 900%;
 }
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -34,13 +36,21 @@ h1 {
 .download-button {
   margin: 5% 5% 3% 0;
 }
+.title-image-container{
+    position: relative;
+}
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  margin-left: 15%;
+  /* max-width: 600px; */
 }
 #features {
-  /* position: relative; */
-  z-index: 10;
+    background-color: #fff;
+    position: relative;
+    /* bottom: 200px; */
+  /* z-index: 10; */
   /* padding-top: 8rem; */
 }
 .feature-row {
@@ -97,4 +107,44 @@ h2 {
 }
 .carousel-inner {
   padding: 7% 15%;
+}
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+.pricing-column{
+    padding: 3% 2%;
+}
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 7% 4%;
+}
+#cta h3{
+    font-weight: 900;
+    color: #fff;
+    font-size: 3rem;
+}
+#footer{
+    text-align: center;
+    padding: 5%;
+}
+.footer-icons{
+    padding: 1rem;
+    letter-spacing: 5px;
+}
+
+
+@media (max-width:992px){
+    #title{
+        text-align: center;
+    }
+    .title-image-container{
+        position: static;
+    }
+    .title-image{
+        margin: auto;
+        transform: rotate(0);
+        position: static;
+    }
 }
